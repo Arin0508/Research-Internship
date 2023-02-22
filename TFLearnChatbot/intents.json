@@ -1,0 +1,53 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "hii", "hiiiiiiii", "How are you", "Is anyone there", "Hello", "Good day", "hey"],
+         "responses": ["Hello, thanks for visiting. How may I help you ?", "Good to see you, How can I help you?", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "opentoday",
+         "patterns": ["open today?", "When do you open today?", "hours today?", "office hours?", "When can I visit?"],
+         "responses": ["We're open every day from 8am-5pm", "Our hours are 8am-5pm every day"]
+        },
+        {"tag": "courses",
+         "patterns": ["How many courses are offered?","courses are offered?", "Degrees offered", "course", "degrees", "degree"],
+         "responses": ["We offer iMtech, Mtech, Msc, MS and Phd.", "Courses offered are iMtech, Mtech, Msc, MS and Phd."]
+        },
+        {"tag": "sports",
+         "patterns": ["play", "sports facilities?", "badminton", "football", "cricket", "volleyball", "basketball", "court", "Swimming", "PlayGround", "Ground"],
+         "responses": ["We have Football, Cricket, Badminton, Tennis, etc.", "We have all major sport facilities."]
+        },
+        {"tag": "imtech",
+         "patterns": ["Tell me about imtech course?", "imtech", "How many years does it take to complete the imtech course?"],
+         "responses": ["The Integrated M.Tech. program is a 5-year integrated program intended for students who have completed or are completing Plus Two (or equivalent). At the end of five years of the program, successful students get dual degrees of B.Tech and M.Tech. You can pursue the programme in CSE or ECE domain."],
+         "context_set": "imtech"
+        },
+        {"tag": "cutoff imtech",
+         "patterns": ["cutoff?", "cutoff for cse", "cutoff for ece", "What was previous year's cutoff for the imtech course?"],
+         "responses": ["In 2021, admission offers were made up to NTA Ranking 6000 for CSE and 7200 for ECE. In 2020, admission offers were made up to NTA Ranking 7300 for CSE and 9000 for ECE. In 2019, admission offers were made up to NTA Ranking 8718 for CSE and 10972 for ECE. The NTA Ranking cutoff for 2022 will depend on the actual applications received."],
+         "context_filter": "imtech"
+        },
+        {"tag": "placement imtech",
+         "patterns": ["placement?", "How were your previous year placements for the imtech course?", "placements for the imtech course?"],
+         "responses": ["During IIIT Bangalore Placements 2021, a total of 543 offers were made among which 238 were full time offers. 17 students opted out from placements. The highest CTC of INR 45.6 LPA & the average CTC for cse - INR 25.00 LPA and for ece - INR 21.97 LPA were offered to the students. Top Recruiters like Apple, Analog Devices, Amazon, Adobe, AppDynamics, Cisco etc participated in the placement drive."],
+         "context_filter": "imtech"
+        },
+        {"tag": "imtech ece",
+         "patterns": ["ece course", "ece ?", "In which domains, can i specialize in ece course?", "Electronics Communication"],
+         "responses": ["The courses in iMTech ECE cover wide range of core topics including Circuit theory, Digital Communication, Microprocessor and microcontrollers, Computer Architecture, Digital Design, Computer Networking, Operating systems, and current technology topics such as Artificial intelligence, Machine learning, ASIC design, Processor Architecture, VLSI subsystems, Robotics, Real time operating systems and many others."],
+         "context_filter": "imtech"
+        },
+        {"tag": "imtech cse",
+         "patterns": ["cse course", "cse ?", "In which domains, can i specialize in cse course?", "Computer Science"],
+         "responses": ["The courses in iMTech CSE cover wide range of core topics including algorithms, automata theory, discrete maths,  Computer Architecture, Digital Design, Computer Networking, Operating systems, and current technology topics such as Artificial intelligence, Machine learning, Approximate algorithms, Software defined network, Real time operating systems and many others."],
+         "context_filter": "imtech"
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        }
+   ]
+}
