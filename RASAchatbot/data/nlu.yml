@@ -1,0 +1,81 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: appointment
+  examples: |
+    - I would like to make a doctors appointment
+    - I need to make an appointment to see the doctor
+
+- intent: rash
+  examples: |
+    - I have a rash that i need a doctor to look at
+    - I have been having skin problems that arent going away
+
+- intent: answer
+  examples: |
+    - Yes
+    - No
+
+- intent: date_time
+  examples: |
+    - Book for [14 October](date) at [6 pm](time)
+    - Book for [today](date) at [6 pm](time)
+    - [today](date) at [6 pm](time)
+    - [14 October](date) at [6 pm](time)
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?

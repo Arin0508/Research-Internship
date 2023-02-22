@@ -1,0 +1,72 @@
+version: "3.1"
+
+intents:
+- greet
+- appointment
+- rash
+- answer
+- date_time:
+    use_entities:
+      - date
+      - time
+
+entities:
+- date
+- time
+
+slots:
+  date:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: date
+    
+  time:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: time
+
+forms:
+  simple_appointment_form:
+    required_slots:
+    - date
+    - time
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_concern:
+  - text: "Can you describe your health concern?"
+  - text: "What seems to be the problem"
+
+  utter_pain:
+  - text: "Are you in any pain?"
+  - text: "Do you have a fever?"
+
+  utter_date_time1:
+  - text: "When would you like the appointment to be booked"
+
+  utter_ask_date:
+  - text: "please enter the date"
+
+  utter_ask_time:
+  - text: "please enter the time"
+
+  utter_submit:
+  - text: "Booking appointment for {date} {time}"
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  # utter_goodbye:
+  # - text: "Bye"
+
+  # utter_iamabot:
+  # - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
